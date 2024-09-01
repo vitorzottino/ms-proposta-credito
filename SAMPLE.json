@@ -1,0 +1,11 @@
+
+//JSON EXAMPLE IF YOU WANT TO INSERT A NEW PROPOSTA
+{
+  "nome": "Vitor",
+  "sobrenome": "Cassemiro",
+  "cpf": "48881162881",
+  "telefone": "11997601009",
+  "renda": 1000.00,
+  "valorSolicitado": 10,
+  "prazoParaPagamento": 2
+}

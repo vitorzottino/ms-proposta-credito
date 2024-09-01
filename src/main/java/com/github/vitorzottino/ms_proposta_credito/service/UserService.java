@@ -5,16 +5,12 @@ import com.github.vitorzottino.ms_proposta_credito.exception.UserNotFoundExcepti
 import com.github.vitorzottino.ms_proposta_credito.model.User;
 import com.github.vitorzottino.ms_proposta_credito.repository.UserRepository;
 import jakarta.persistence.EntityNotFoundException;
-import jakarta.persistence.Table;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class UserService {

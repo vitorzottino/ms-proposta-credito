@@ -27,6 +27,6 @@ public class Proposta {
 
     private Boolean aprovado = false;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "user_id")
     private Long userId;
 }

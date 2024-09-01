@@ -2,23 +2,20 @@ package com.github.vitorzottino.ms_proposta_credito.controller;
 
 
 import com.github.vitorzottino.ms_proposta_credito.dto.UserDTO;
-import com.github.vitorzottino.ms_proposta_credito.repository.UserRepository;
 import com.github.vitorzottino.ms_proposta_credito.service.UserService;
 import jakarta.validation.Valid;
-import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("users")
 public class UserController {
 
     @Autowired
