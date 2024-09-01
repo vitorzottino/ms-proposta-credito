@@ -22,5 +22,11 @@ public class Proposta {
     @Column(nullable = false)
     private BigDecimal valorSolicitado;
 
+    @Column(nullable = false)
+    private Integer prazoParaPagamento;
+
     private Boolean aprovado = false;
+
+    @Column(nullable = false)
+    private Long userId;
 }
