@@ -41,10 +41,11 @@ public class UserService {
     @Transactional
     public UserDTO update(Long id, UserDTO dto) {
         try {
-            User entity = userRepository.getReferenceById(id);
-            copyDtoToEntity(dto, entity);
-            entity = userRepository.save(entity);
-            return new UserDTO(entity);
+            User user = userRepository.getReferenceById(id);
+            copyDtoToEntity(dto, user);
+            user.setId(id);
+            user = userRepository.save(user);
+            return new UserDTO(user);
         } catch (EntityNotFoundException e) {
             throw new UserNotFoundException(id);
         }
