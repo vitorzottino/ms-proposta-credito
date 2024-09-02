@@ -111,7 +111,7 @@ JSON BODY FOR INSERT
 #### Update proposta by id if exists
 
 ```http
-  POST localhost:8080/users
+  PUT localhost:8080/propostas
 ```
 
 | Parameter | Type     | Description                       |
