@@ -112,7 +112,7 @@ JSON BODY FOR INSERT
 
 ```http
  PUT localhost:8080/propostas/{id}
-
+```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
